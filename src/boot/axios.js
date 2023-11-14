@@ -8,7 +8,7 @@ import axios from 'axios'
 // "export default () => {}" function below (which runs individually
 // for each client)
 // const RESTAPI = "http://localhost:3000/api"
-const RESTAPI = 'https://hw5-back.vercel.app'
+const RESTAPI = 'https://hw5-back.vercel.app/api'
 // const RESTAPI = "http://172.26.117.16:3000/api/"
 const api = axios.create({ 
   baseURL: RESTAPI,
