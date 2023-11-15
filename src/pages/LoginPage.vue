@@ -95,6 +95,7 @@
             else{
               this.storeLogUser.avatar = "default-avatar.png";
             }
+            this.$router.push("/user");
           }
         })
         .catch((err)=>{
@@ -104,7 +105,7 @@
             message: "Invalid username or password"
           });
         });
-        this.$router.push("/user");
+        this.$refs.loginForm.reset();
       }
     }
   })
